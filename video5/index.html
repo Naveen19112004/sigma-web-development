@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img height="230" src="Screenshot 2025-11-21 070826.png" alt="webpage"/>
+
+    <p>If you set only height (or only width) for an <img> tag, the browser automatically calculates the other value to maintain the image’s original aspect ratio (example: if the original is 200 and 400 then that is 2:1 ratio so it maintains that ratio). This prevents distortion and keeps the image looking natural.</p>
+
+    <table>
+        <caption>Employee details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Fav Language</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>harry</td>
+                <td>programmer</td>
+                <td>js</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Sam</td>
+                <td rowspan="2">java</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">sam</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">sam</td>
+                <td>foot</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- 
+    OL (Ordered List) types:
+        type="1"   → Numbers (default)
+        type="A"   → Uppercase Letters
+        type="a"   → Lowercase Letters
+        type="I"   → Uppercase Roman Numerals
+        type="i"   → Lowercase Roman Numerals
+
+    Declaration example:
+        <ol type="A"> 
+-->
+
+<ol>
+    <li>apple</li>
+    <li>banana</li>
+</ol>
+
+<!-- 
+    UL (Unordered List) types:
+        type="disc"   → Solid bullet (default)
+        type="circle" → Hollow circle bullet
+        type="square" → Square bullet
+
+    Declaration example:
+        <ul type="circle"> 
+-->
+
+<ul>
+    <li>carrot</li>
+    <li>broccoli</li>
+</ul>
+
+    <!-- definition lang def term def of def -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+</body>
+</html>
