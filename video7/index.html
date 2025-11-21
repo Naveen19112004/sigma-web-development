@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form to apply for sigma web development course-TA</h1>
+    <p>The <label> tag is used to connect text with an input field.
+It improves accessibility, allows clicking the label to focus or activate the input, and gives proper meaning to form elements. Labels are required for good UI, SEO, and usability.
+</p>
+<p>
+    👉 for = input’s id
+    👉 That’s the only connection
+</p>
+<p><b>name:</b> The name tells the server which question the answer belongs to. 
+When a form is submitted, the browser sends data as name=value pairs. 
+Without name, the server cannot understand what the value means. 
+Example: gender=male, username=Naveen.</p>
+<p><b>value:</b> The actual answer the user selects or types.</p>
+
+    <form action="post">
+      <div>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value="enter your name"
+        />
+      </div>
+      <div>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />female
+      </div>
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label>
+      </div>
+      <div>
+        <select>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+        </select>
+      </div>
+      <div>
+        <textarea rows="4" cols="50">
+Why do you want to become a TA?
+            </textarea
+        >
+      </div>
+    </form>
+  </body>
+</html>
