@@ -1,0 +1,30 @@
+<h2>CSS Specificity - Lecture 21 Notes</h2>
+
+<h3>1. Source Order</h3>
+<p>If two rules have the same specificity, the rule written last wins. Example: If an element has classes bg1 and bg2, and bg2 is written later in CSS, its styles will override bg1.</p>
+
+<h3>2. Specificity Hierarchy</h3>
+<ul>
+  <li>Inline styles → 1000</li>
+  <li>ID selectors → 100</li>
+  <li>Class, attribute, pseudo-class → 10</li>
+  <li>Element, pseudo-element → 1</li>
+  <li>Universal selector (*) → 0</li>
+</ul>
+<p>Example: <code>h1.something1</code> has specificity 1 (h1) + 10 (class) = <b>11</b>.</p>
+
+<h3>3. CSS Origin</h3>
+<p>CSS comes from different sources:</p>
+<ul>
+  <li><b>Author styles</b> – your CSS (highest priority)</li>
+  <li><b>User styles</b> – user-defined browser settings</li>
+  <li><b>Browser default (User Agent stylesheet)</b></li>
+</ul>
+<p>Author CSS overrides browser defaults.</p>
+
+<h3>4. !important Keyword</h3>
+<p><code>!important</code> has the highest priority and overrides all other rules. It should be used only when absolutely necessary.</p>
+
+<h3>Summary</h3>
+<p>CSS specificity determines which style wins. Inline > ID > Class > Element > Universal. If specificity is equal, the last rule in the CSS file wins. The <code>!important</code> keyword overrides everything.</p>
+<p><b>!important always overrides all CSS rules regardless of specificity.</b> It has the highest priority in CSS. Specificity is checked only when two or more rules use !important. If only one rule has !important, it wins automatically over inline styles, IDs, classes, and all other selectors.</p>

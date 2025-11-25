@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* class selector */
+      .div1{
+        background-color:blue;
+        color:white;
+      }
+      /* id selector */
+      #div2{
+        background-color:green;
+        color:black;
+      }
+      /* child selector */
+      div > p {
+        background-color:pink;
+        color:brown;
+      }
+      /* decentant */
+      div article{
+        background-color:gray;
+        color:yellow;
+      }
+      /* universal selector */
+      *{
+        margin:0px;
+        padding:0px;
+      }
+      /* pseudo selector */
+a:link{
+    /* before clicking it */
+    background-color:rosybrown
+}
+a:hover{
+    background-color:lightgreen
+}
+a:visited{
+    /* after clicking it */
+    background-color:lightblue
+}
+a:active{
+    /* when it is clicked then */
+    background-color:yellow
+}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        i am the div
+        <p>I am the p</p>
+    </div>
+    <div id="div2">i am another div tag
+        <p>
+            <article>hey i am the article</article>
+        </p>
+    </div>
+    <a href="https://www.google.com">google</a>
+</body>
+</html>

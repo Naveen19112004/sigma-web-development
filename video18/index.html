@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0px;
+        }
+        div{
+            margin:5px;
+            padding:5px;
+            border:2px solid blue;
+            width:200px;
+            box-sizing:border-box;
+        }
+        span{
+            border:2px solid red;
+            margin:5px;
+            padding:5px;
+            width:200px;
+            height:200px;
+            box-sizing:border-box;
+        }
+        p:first-child{
+            border:2px solid green;
+            margin:5px;
+            padding:5px;
+            width:200px;
+        }
+            
+
+    </style>
+</head>
+<body>
+    <p>i am the para</p>
+    <p>Block elements always take up the full line, even if their width is reduced. Reducing the width only shrinks the visible content area, but the remaining part of the line is still reserved for the block element. Inline elements cannot move into this space, because block-level elements force the next element to start on a new line.</p>
+
+    <p>Inline elements take only the required width and sit beside other inline elements, but they can never sit beside a block element in normal flow.</p>
+
+    <p><b>Margin Collapse:</b> Margin collapse only happens between two block-level elements. Inline elements like &lt;span&gt; do not collapse margins, and their vertical margins (top/bottom) do not create visible gaps. That is why the 5px margin does not appear around the span in this example.</p>
+
+    <p><b>Universal Selector:</b> * applies to all elements but has the lowest specificity. Element selectors (div, p, span) override it because they have higher specificity. CSS does not run line by line; it resolves conflicts based on specificity rules.</p>
+
+    <div>Learning about margin ,padding ,and the border</div>
+    <span>same</span>
+</body>
+</html>

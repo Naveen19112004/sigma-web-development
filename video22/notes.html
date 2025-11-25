@@ -1,0 +1,21 @@
+<h2>CSS Sizing Units Summary</h2>
+
+<p><b>px:</b> Absolute pixel. If width or height exceeds screen size, scrollbars appear.</p>
+
+<p><b>vw / vh:</b> 1vw = 1% of viewport width, 1vh = 1% of viewport height.</p>
+
+<p><b>%:</b> Percentage is based on parent element’s width or height.</p>
+
+<p><b>em:</b> Relative to parent’s font-size. 1em = parent font-size, not parent width.</p>
+
+<p><b>rem:</b> Relative to root (html) font-size. Remains consistent regardless of nesting.</p>
+
+<p><b>min-width / max-width:</b> Restrict element size between minimum and maximum limits.</p>
+
+<p><b>vmin / vmax:</b> vmin uses 1% of the smaller dimension of the viewport; vmax uses 1% of the larger dimension. Useful for responsive shapes and scaling.</p>
+<p>Units like vmin and vmax always use the viewport dimensions, not the parent element. vmin is based on the smaller side of the screen, and vmax is based on the larger side. Even inside a small parent div, an element using vmin or vmax will size according to the screen, not the parent.</p>
+<p>vmin and vmax are viewport units used for fully responsive sizing. vmin uses the smaller screen dimension and is perfect for making shapes that must stay proportional, like circles or squares. vmax uses the larger screen dimension and helps create large responsive text or full-screen hero sections. These units ignore parent size and always depend on the screen size, making layouts more fluid and scalable.</p>
+<p>Margin collapse only works for vertical margins (top and bottom). In my divs, I used margin: auto, which only sets the left and right margins to auto and leaves top and bottom as 0. Since vertical margins are zero, there is nothing to collapse. Margin collapse requires two adjacent block-level elements with non-zero top or bottom margins.</p>
+<p><b>Percentage (%) units work only on block-level or block-formatted elements.</b> Inline elements (like span) do not accept width or height, so percentage values have no effect on them. If you try to apply width: 50% or height: 50% to an inline element, nothing changes because inline elements cannot expand or shrink. To use percentages on a span, you must first convert it into a block or inline-block element using display: block or display: inline-block.</p>
+<p>The reason margin-top and margin-bottom were not working is because the shorthand property margin:auto was written again after them. Shorthand properties overwrite all four sides (top, right, bottom, left). The last shorthand always wins, so margin:auto reset the vertical margins to auto and removed the 10px values. To center with vertical margins, use margin:10px auto instead.</p>
+    <!-- padding-top ,bottom is not applicable for inline elements -->
