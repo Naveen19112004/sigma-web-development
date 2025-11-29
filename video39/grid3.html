@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        width:80vw;
+        height:40vh;
+        border:2px solid black;
+        display:grid;
+        grid-template-columns:1fr 2fr 1fr;
+        /* gap:34px; */
+        /* or row or column gap */
+        row-gap:10px;
+        column-gap:20px;
+        /* dont use padding in grid and flexbox */
+        justify-items:center;  
+        /* flex-start,flex- end,end,center */
+        align-items:center;
+        
+     }
+     .item{
+        border:2px solid red;
+        width:55px; 
+        height:55px;
+     }
+     .item1{
+
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html> -->
+<!-- separately we can select an item and align  -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        width:80vw;
+        height:40vh;
+        border:2px solid black;
+        display:grid;
+        grid-template-columns:1fr 2fr 1fr;
+        /* gap:34px; */
+        /* or row or column gap */
+        row-gap:10px;
+        column-gap:20px;
+        /* dont use padding in grid and flexbox */
+        justify-items:center;  
+        /* flex-start,flex- end,end,center */
+        align-items:center;
+        
+     }
+     .item{
+        border:2px solid red;
+        width:55px; 
+        height:55px;
+     }
+     .item2{
+        /* here is that */
+        align-self:start;
+     }
+      .item3{
+        /* here is that */
+        justify-self:start;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>
+<!-- if height of the container is more than the height of the grid
+  then align-content:center then center
+  justify-content also-->
+  <!-- place-content:center; -->

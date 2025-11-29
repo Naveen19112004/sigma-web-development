@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Display Property - 10 Points</title>
+  <style>
+    body { font-family: system-ui, Arial; padding: 20px; line-height: 1.4; }
+    h2 { margin-bottom: 8px; }
+    ol { max-width: 720px; }
+    li { margin: 6px 0; }
+    code { background:#f3f4f6; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <h2>DISPLAY PROPERTY — 10 Short Points</h2>
+  <ol>
+    <li><b>Inline elements</b> behave like text inside a line.</li>
+    <li><b>Inline:</b> <code>width</code> and <code>height</code> do not work.</li>
+    <li><b>Inline:</b> <code>margin-left</code> and <code>margin-right</code> work.</li>
+    <li><b>Inline:</b> <code>margin-top</code> and <code>margin-bottom</code> do not work.</li>
+    <li><b>Inline:</b> <code>padding-left</code> and <code>padding-right</code> work.</li>
+    <li><b>Inline:</b> <code>padding-top</code> and <code>padding-bottom</code> apply visually but do not push other elements vertically.</li>
+    <li><b>Block elements</b> start on a new line and (by default) take the full available width.</li>
+    <li><b>Block:</b> all margins and paddings (top, bottom, left, right) behave normally.</li>
+    <li><b>Inline-block</b> sits inline (can appear beside other boxes) but supports the block box model.</li>
+    <li><b>Inline-block:</b> you can place multiple inline-block boxes on the same line (if space allows) and each supports <code>width</code>, <code>height</code>, and all margins & paddings.</li>
+  </ol>
+</body>
+</html>
+<p>Inline-block lets you place multiple block-like boxes on the same line. Each box supports width, height, margin (top/right/bottom/left) and padding (top/right/bottom/left), but they flow inline and wrap to the next line when space runs out.</p>

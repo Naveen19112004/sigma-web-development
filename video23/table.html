@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Inline vs Block - Margin & Padding</title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Works?</th>
+    <th>Why</th>
+  </tr>
+
+  <tr>
+    <td>padding-left/right</td>
+    <td>✔</td>
+    <td>Text can expand sideways</td>
+  </tr>
+
+  <tr>
+    <td>padding-top/bottom</td>
+    <td>✔ (inside)</td>
+    <td>But line-height does NOT change</td>
+  </tr>
+
+  <tr>
+    <td>margin-left/right</td>
+    <td>✔</td>
+    <td>Pushes text sideways</td>
+  </tr>
+
+  <tr>
+    <td>margin-top/bottom</td>
+    <td>❌</td>
+    <td>Text cannot push lines up/down</td>
+  </tr>
+</table>
+
+</body>
+</html>

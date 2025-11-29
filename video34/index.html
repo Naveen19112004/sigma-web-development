@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.cards{
+    border:2px solid black;
+    display:flow-root;
+/* helps to take complete border of this parent block */
+
+}
+.cards img{
+    float:right;
+   
+}
+.cards .card{
+   border:2px solid red;
+
+}
+.card:nth-child(3){
+    clear:right;
+}
+</style>
+<body>
+    <div class="cards">
+        <img src="image.webp" width="380px" alt="not able to dispaly">
+        <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint neque eligendi pariatur aspernatur cupiditate veniam laudantium tempore itaque, ipsa quas. Qui architecto deserunt atque inventore!</p>
+        <div class="card">I am card1
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ullam quia quo minima soluta nemo architecto in, molestiae, eos, illum veniam vitae maiores! Ducimus, totam.
+        </div>
+        <div class="card">I am card2</div>
+        <div class="card">I am card3</div>
+    </div>
+</body>
+</html>

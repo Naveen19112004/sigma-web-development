@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border:2px solid blue;
+            margin-top:40px;
+            margin-left:40px;
+        }
+      .c{
+        border:2px solid black;
+        width:60vw;
+        height:30vh;
+        margin:auto;
+      }
+      .c1{
+            margin-top:10px;
+            margin-bottom: 10px;
+            background-color:green;
+            position:sticky;
+            top:50px;
+      }
+      .c2{
+            margin-top:10px;
+            margin-bottom: 10px;
+            position:relative;
+            top: 80px;
+            background-color:blue;
+      }
+      .c3{
+        margin-top:10px;
+        margin-bottom: 10px;
+        background-color:yellow;
+        position:relative;
+        z-index:1;
+      }
+      .c4{
+        margin-top:10px;
+        margin-bottom: 10px;
+        background-color:red;
+      }
+      .c5{
+        margin-top:10px;
+        margin-bottom: 10px;
+        background-color:rgb(0, 255, 225);
+        position:absolute;
+        top:0px;
+      }
+      .c6{
+        margin-top:10px;
+        margin-bottom: 10px;
+        background-color:rgb(255, 0, 200);
+      }
+      .c7{
+        margin-top:10px;
+        margin-bottom: 10px;
+        background-color:rgba(255, 145, 0, 0.735);
+         position:fixed;
+        top:50px;
+      }
+      .c8{
+        margin-top:10px;
+        margin-bottom: 10px;
+        background-color:rgba(255, 145, 0, 0.329);
+      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="c c1">div1</div>
+        <div class="c c2">div2</div>
+        <div class="c c3">div3</div>
+        <div class="c c4">div4</div>
+        <div class="c c5">div5</div>
+        <div class="c c6">div6</div>
+        <div class="c c7">div7</div>
+        <div class="c c8">div8</div>
+    </div>
+</body>
+</html>
