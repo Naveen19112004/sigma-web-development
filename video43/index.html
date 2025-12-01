@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .container .nav{
+            display:flex;
+            justify-content:space-between;
+    
+        }
+        .container .nav .stuff{
+            display:flex;
+            justify-content:space-around;
+            gap:30px;
+        }
+        .container .nav .logo{
+            display:flex;
+            justify-content:center;
+            align-items:end;
+        }
+        .container .nav .logo span{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:20px;
+        }
+        .container .nav .logo .small{
+            font-size:10px;
+        }
+        .container .nav .stuff .cc{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="logo.png" width="40" alt="">
+                <div>UltraEdit
+                    <div class="small">for Windows</div>
+                </div>
+                
+            </div>
+            <div class="stuff">
+                <div class="cc">
+                    <div>Products</div>
+                    <img src="down.svg" width="10px" alt="">
+                </div>
+                <div class="cc">
+                    <div>Find</div>
+                    <img src="down.svg" width="10px" alt="">
+                </div>
+                <div class="cc">
+                    <div>Resources</div>
+                  <img src="down.svg" width="10px" alt="">
+                </div>
+                <div class="cc">
+                    <div>Abouts</div>
+                    <img src="down.svg" width="10px" alt="">    
+                </div>
+                
+                <img src="settings.png" width="30px" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

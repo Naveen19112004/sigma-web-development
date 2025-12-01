@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .container{
+            height:50vh;
+            width:50vw;
+            background-color: aliceblue;
+
+        }
+        .box{
+            height:5vh;
+            width:5vw;
+            background-color:blue;
+            animation: naveen 3s ease-in-out 1s infinite, 
+                       nani 3s ease-in-out 1s infinite;
+        }
+        @keyframes naveen {
+            form{
+                background-color: blueviolet;
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+        @keyframes nani {
+            0%{
+                transform:rotateX(100deg);
+            }
+            20%{
+                transform:rotateX(200deg);
+            }
+            50%{
+                transform: rotate(300deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
