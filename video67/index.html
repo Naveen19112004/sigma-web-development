@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container .box{
+      margin:5px;
+      padding:5px;
+      border:1px solid black;
+      height:40px;
+      width:40px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+        <div class="box">four</div>
+        <div class="box">five</div>
+    </div>
+
+<script>
+
+      console.log(document.body.childNodes);
+      // OUTPUT: NodeList(3) [text, div.container, script]
+
+      console.log(document.body.childNodes[0]);
+      // OUTPUT: #text (because there is whitespace before <div>)
+
+      console.log(document.body.childNodes[1].childNodes);
+      // OUTPUT: NodeList(11) [text, div.box, text, div.box, ... text]
+      // Text nodes appear because of whitespace/newlines
+
+      let cont = document.body.childNodes[1];
+
+      console.log(cont);
+      // OUTPUT: <div class="container">…</div>
+
+      console.log(cont.firstChild);
+      // OUTPUT: #text  (whitespace before first .box)
+
+      console.log(cont.lastChild);
+      // OUTPUT: #text  (whitespace after last .box)
+
+      cont.lastElementChild.style.color = "red";
+      cont.lastElementChild.style.backgroundColor = "green";
+      // lastElementChild = <div class="box">five</div>
+      // It turns red text + green background
+
+      console.log(cont.lastElementChild.parentElement);
+      // OUTPUT: <div class="container">…</div>
+
+      console.log(cont.lastElementChild.previousElementSibling);
+      // OUTPUT: <div class="box">four</div>
+
+      console.log(document.body.firstElementChild.children);
+      // OUTPUT: HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+
+      console.log(document.body.firstElementChild.childNodes);
+      // OUTPUT: NodeList(11) [text, div.box, text, div.box, ... text]
+
+      console.log(cont.lastElementChild.nextElementSibling);
+      // OUTPUT: null (because last box "five" has no next sibling)
+
+</script>
+
+</body>
+</html>

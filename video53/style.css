@@ -13,23 +13,25 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    position:relative;
+    
 }
 .container .navbar{
     width: 100%;
     max-width:70vw;
-    display:flex; 
+    display:flex;
+    flex-wrap:wrap; 
     justify-content:space-between;
     align-items:center;
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto; /* centers block element */
+
+
 }
 
 .container .navbar ul{
     display:flex; 
     justify-content:space-between;
     align-items:center;
+    flex-wrap: wrap;
     gap:20px;
 }
 .container .navbar ul li{
@@ -61,8 +63,8 @@
     justify-content:center;
     align-items:center;
     row-gap: 7px;
-    flex:1;
-   
+    text-align: center;
+    
     
 }
 .container .main span:nth-child(1){
@@ -78,6 +80,8 @@
     font-family: "Poppins", sans-serif;
 }
 .container .main .mail #email{
+    width:100%;
+    max-width:150px;
     background-color:rgba(0,0,0,0.5);
     border-radius: 5px;
     border:1px solid black;
