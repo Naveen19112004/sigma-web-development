@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            margin:23px;
+            padding:23px;
+            border:2px solid black;
+            background-color: blue;
+        }
+        .childcontainer{
+            margin:23px;
+            padding:23px;
+            border:2px solid black;
+            background-color: rgb(255, 0, 0);
+        }
+        .container{
+            margin:23px;
+            padding:23px;
+            border:2px solid black;
+            background-color: rgb(255, 230, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">i am the child</div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            alert("chils is clicked");
+            e.stopPropagation();//prevents propagation
+        })
+        document.querySelector(".childcontainer").addEventListener("click",(e)=>{
+            alert("childcontainer is clicked")
+        })
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            alert("container is clicked")
+        })
+        function randomcolor(){
+            let a=Math.ceil(Math.random()*(255));
+            let b=Math.ceil(Math.random()*(255));
+            let c=Math.ceil(Math.random()*(255));
+            return `rgb(${a} ${b} ${c})`;
+        }
+        // setInterval(()=>{
+        //    document.querySelector(".childcontainer").style.backgroundColor=randomcolor();
+        //    document.querySelector(".child").style.backgroundColor=randomcolor();
+        //    document.querySelector(".container").style.backgroundColor=randomcolor();
+        // },1000)
+        let a=setTimeout(()=>{
+            document.querySelector(".childcontainer").style.backgroundColor=randomcolor();
+            document.querySelector(".child").style.backgroundColor=randomcolor();
+            document.querySelector(".container").style.backgroundColor=randomcolor();
+        },5000)
+        console.log(a);
+        // whatever the value of a is then we can clear the interval by  clearInterval and the clearTimeout
+    </script>
+</body>
+</html>

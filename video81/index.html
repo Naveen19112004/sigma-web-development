@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:green;
+            color:white;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"></div>
+
+    <script>
+        let arr=[
+            "Initializing Hacking...",
+            "Reading your Files...",
+            "Password files Detected...",
+            "Sending all passwords and personal files to server...",
+            "Cleaning up..."
+        ];
+
+        // FIXED delay() — now actually waits
+        function delay(){
+            return new Promise((resolve, reject) => {
+                let a = (1 + 6 * Math.random()) * 1000;
+                setTimeout(resolve, a);
+            });
+        }
+
+        // FIXED waiting() — now waits for delay()
+        async function waiting(){
+            await delay();
+        }
+
+        // THIS FUNCTION stayed same (only correct DOM append)
+        let fn = async (value, index, arr) => {
+            let div = document.createElement("div");
+            div.innerHTML = value;
+            document.querySelector(".container").appendChild(div);
+
+            await waiting();
+        };
+
+        // RUN the messages in order (required for your logic)
+        (async function run(){
+            for (let i = 0; i < arr.length; i++){
+                await fn(arr[i], i, arr);
+            }
+        })();
+
+    </script>
+</body>
+</html>

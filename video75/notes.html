@@ -1,0 +1,100 @@
+<!-- <div>
+    ✅ JavaScript: Asynchronous, Promises, Async/Await — Clean Notes
+🔹 JavaScript is Asynchronous by Default
+
+JavaScript runs code without waiting for time-taking tasks (API calls, database operations, timers, etc.).
+This means the next line of code executes even if the previous task has not finished yet.
+
+🟦 Why Callbacks Are Not Enough
+
+Callbacks do not have any built-in waiting mechanism.
+When we keep nesting callbacks inside callbacks, we get the Pyramid of Doom (callback hell):
+
+func1(() => {
+    func2(() => {
+        func3(() => {
+            ...
+        })
+    })
+})
+
+
+This becomes hard to read, debug, and maintain.
+
+🟩 Promises — The Solution
+
+Promises help us write asynchronous code in a clean and structured way.
+
+A Promise has two outcomes only:
+
+resolve() → success
+
+reject() → failure
+
+A promise cannot resolve and reject both. Once settled, its state cannot change.
+
+We handle promise results using:
+
+.then() → runs when the promise resolves
+
+.catch() → runs when the promise rejects
+
+.finally() → runs always (optional)
+
+🟨 Why Promises Are Better
+
+Promises allow us to “wait” for a task to finish before moving forward.
+They provide a cleaner structure and avoid callback hell.
+
+🟧 Async / Await
+
+async and await make promise handling look like synchronous code.
+
+async function run() {
+    const data = await fetchData();
+    console.log(data);
+}
+
+
+await pauses inside the async function until the promise settles.
+
+🟦 Important Promise Utility Methods
+1️⃣ Promise.all([p1, p2, ...])
+
+Waits for all promises to resolve
+
+If any promise rejects → entire Promise.all rejects
+
+Use case: multiple API calls that all must succeed.
+
+2️⃣ Promise.allSettled([p1, p2, ...])
+
+Returns the status and value of every promise
+
+It never rejects, even if some promises fail
+
+Useful when you want results of all promises, successful or failed
+
+3️⃣ Promise.race([p1, p2, ...])
+
+Returns the first promise that settles (resolve or reject)
+Use case: timeouts, fastest request, API fallback.
+
+4️⃣ Promise.any([p1, p2, ...])
+
+(This is the one you forgot — the “C” was a confusion)
+
+Returns the first resolved promise
+
+Ignores rejections
+
+Rejects only if all promises fail
+
+5️⃣ Promise.resolve(value)
+
+Creates a promise that resolves immediately.
+
+6️⃣ Promise.reject(error)
+
+Creates a promise that rejects immediately.
+</div> -->
