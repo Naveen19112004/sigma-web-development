@@ -104,3 +104,4 @@ console.log("process data");
 console.log("task2");
 }
 main()
+// spread breaks a collection into individual elements, Rest collects individual elements into a collection.

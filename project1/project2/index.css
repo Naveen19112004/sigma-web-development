@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: yellow;
+}
+.container{
+    background-color: rgb(4, 111, 128);
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+}
+.firstcurrency{
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     margin:30px;
+}
+.firstcurrency #sub1currency{
+    padding:7px;
+}
+.firstcurrency #sub1inputbox{
+    background:transparent;
+    text-align:right;
+    font-size:25px;
+    border:0px;
+}
+.secondcurrency{
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     margin:30px;
+}
+.secondcurrency #sub2currency{
+    padding:7px;
+}
+.secondcurrency #sub2inputbox{
+    background:transparent;
+    text-align:right;
+    font-size:25px;
+    border:0px;
+    color:black;
+}
+select:focus,
+input:focus{
+    outline:0;
+}

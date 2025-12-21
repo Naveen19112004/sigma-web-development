@@ -1,0 +1,24 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;;
+}
+img{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-55px;
+    border-radius: 50%;
+ }
+.testimonial-container{
+    background-color: slateblue;
+    width:600px;
+    height:180px;
+    padding:30px;
+    position:relative;
+    border-radius: 10px;;
+}

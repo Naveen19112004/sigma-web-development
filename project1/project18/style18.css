@@ -1,0 +1,43 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+}
+.subh{
+    font-weight: 700;
+}
+.container{
+    text-align:center;
+}
+.heading{
+    font-size:25px;
+    font-family:sans-serif;
+}
+.btns{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+}
+.btns #rock{
+    background-color: red;
+    padding:7px;
+
+}
+.btns #paper{
+    background-color:rgb(56, 130, 205);
+    padding:7px;
+}
+.btns #scissors{
+    background-color:rgb(6, 146, 6);
+    padding:7px;
+}
+.scores{
+    display:inline-block;
+    font-weight: 700;
+}
+.judgement{
+    font-weight: 700;
+}

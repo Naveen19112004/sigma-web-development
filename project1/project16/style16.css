@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(179, 250, 13);
+}
+.form{
+    position:absolute;
+    top:30%;
+    border-radius:10px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 5px rgba(0,0,0, 0.7);
+    outline:none;
+    border:none;
+}
+.input{
+    border-radius:5px;
+    padding-right:250px;
+    padding-top:20px;
+    padding-bottom:20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.8);
+    color:grey;
+    outline:none;
+    border:none;
+    font-size: 30px;
+}
+.input::placeholder{
+    font-size:20px;
+
+}
+.list{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color: yellow;
+}
+.list li{
+    list-style:none;
+    padding:15px;
+    font-size:20px;
+    font-family: sans-serif;
+    display:flex;
+    
+}
+.fa-square-check{
+    color:green;
+    position:absolute;
+    right:28px;
+    cursor:pointer;
+}
+.fa-trash{
+    position:absolute;
+    right:6px;
+    color:red;
+    cursor:pointer;
+}
+.list li.checked{
+    color:darkgray;
+    text-decoration:line-through;
+}
